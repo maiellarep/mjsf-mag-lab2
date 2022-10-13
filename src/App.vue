@@ -12,8 +12,14 @@
 
 <script>
 import Home from "./views/home/Home";
+import { ref } from "@vue/composition-api"
+
 
 export default {
+  setup() {
+    const isOpen = ref(false);
+    return { isOpen };
+  },
   name: 'App',
   components: {
      Home

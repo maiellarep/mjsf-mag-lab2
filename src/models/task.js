@@ -5,6 +5,7 @@ export class Task {
   constructor() {
     this.title = "";
     this.description = "";
+    this.type = "";
     this.status = Task.TS_INCOMPLETED;
   }
 }
