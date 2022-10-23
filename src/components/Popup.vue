@@ -4,7 +4,7 @@
         <div class="veu-modal-inner">
           <div class="vue-modal-content">
             <slot />
-            <button type="button" @click="$emit('close')">Close</button>
+            <button type="button" class="btn btn-primary close-btn" @click="$emit('close')">Close</button>
           </div>
         </div>
       </transition>
@@ -31,6 +31,12 @@ export default {
   box-sizing: border-box;
 }
 
+.close-btn{
+  background-color: red;
+  border-color: red;
+}
+
+
 .vue-modal {
   position: fixed;
   top: 0;
@@ -55,6 +61,8 @@ export default {
   background-clip: padding-box;
   border-radius: 0.3rem;
   padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
 }
 </style>
 

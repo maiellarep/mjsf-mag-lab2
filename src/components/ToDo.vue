@@ -5,7 +5,7 @@
         ToDo Component
       </div>
       <div class="card-body">
-        <button @click="isOpen = true">Create a new task</button>
+        <button class="btn btn-primary" @click="isOpen = true">Create a new task</button>
         <Popup :open="isOpen" @close="isOpen = !isOpen">
           <form>
             <div class="form-group">
